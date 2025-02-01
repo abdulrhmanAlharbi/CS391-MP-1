@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    color: white;
+}
+main{
+    height : 100vh;
+}
+
+#page-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+header{
+    background: black;
+    margin-bottom: 1.5vh;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    background: #151611;
+
+}
+
