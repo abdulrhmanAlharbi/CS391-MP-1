@@ -2,12 +2,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+#page-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: #ebc248 0.25vh solid;
+}
+
 body {
-    background: black;
+    background: #101112;
     color: white;
 }
 main{
-    height : 100vh;
+    width: 100%;
+    height: 100vh;
 }
 
 #page-wrapper {
@@ -16,17 +24,107 @@ main{
 }
 
 header{
-    background: black;
+    background: #101112;
+    color: #ebc248;
+    margin-top: 0.7vh;
     margin-bottom: 1.5vh;
 }
-
-nav ul{
+#left-content {
+    width : 20%;
+    height: 100vh;
+    border-right: 0.4vw solid #343538;
+    <!-- box-shadow: 4px 0px 4px #161719; -->
     display: flex;
     flex-direction: column;
 }
+nav {
+}
+
+#left-nav {
+    height: 5vh;
+    padding-top: 1.3vh;
+    padding-left: 1.3vw;
+    font-size: calc(3px + 1vw);
+    background: #343538;
+    color: #6fb0f2;
+}
+
+#left-urls {
+    height: 5vh;
+    padding-top: 1.3vh;
+    padding-left: 1.3vw;
+    font-size: calc(3px + 1vw);
+    background: #343538;
+    color: #6fb0f2;
+}
+
+#social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li{
+    text-decoration: none;
+    font-size: calc(3px + 1vw);
+    text-align: left;
+    width: 100%;
+    height: 7vh;
+    background-color:#232426;
+    margin: 0;
+}
+nav a {
+    display: block; /* to make the url occupy the entire li */
+    height: 100%;
+    width : 100%;
+    text-decoration: none;
+    padding-top: 2vh;
+    padding-left: 1.3vw;
+    color: white;
+}
+
+nav li:hover{
+    background: #1b1c1d;
+}
+nav a:hover{
+    color: #e87a89;
+}
 
 #container {
-    background: #151611;
+    background: #232426;
+    border: 0.3vw solid #343538;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
 
+#current-page-header {
+    display: flex;  /* to be able to add more labels if needed */
+    height: 5vh;
+    width: 100%;
+    background: #343538;
+}
+#cph-text-container {
+    position: relative;
+    width: 10%;
+    background: #232426;
+    font-size: calc(3px + 1vw);
+    margin-top: 1.5vh;
+}
+#cph-text {
+    position: absolute;
+    bottom: 0;
+    color: red;
 }
 

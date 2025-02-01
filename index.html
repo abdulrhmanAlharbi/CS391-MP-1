@@ -7,6 +7,7 @@
         <title> Home | resume </title>
     </head>
     <body>
+        <img src="maine-sunrise-crop.jpg" alt="" id="page-img" />
         <div id="page-wrapper">
             <header>    <!-- 1. header-->
                 <h1>Abdulrhman Alharbi</h1>
@@ -14,18 +15,34 @@
 
             </header>
             <div id="container">
-                <nav>       <!-- 2. navigation -->
-                    <ul>
-                        <li><a href="index.html" target="_blank" title="go back to the homepage">Home</a></li>
-                        <li><a href="index.html">Education</a></li>
-                        <li><a href="index.html">Employment</a></li>
-                        <li><a href="index.html">Achievements</a></li>
-                        <li><a href="index.html">References</a></li>
-                        <li><a href="index.html">Projects</a></li>
+                <div id="left-content">
+                    <nav>       <!-- 2. navigation -->
+                        <h3 id="left-nav">Navigation</h3>
+                        <ul id="nav-list">
+                            <li><a href="index.html" title="you are here">Home</a></li>
+                            <li><a href="index.html">About Me</a></li>
+                            <li><a href="index.html">Skills</a></li>
+                            <li><a href="index.html">Projects</a></li>
+                            <li><a href="index.html">Experience</a></li>
+                            <li><a href="index.html">Contact Me</a></li>
+                        </ul>
+                    </nav>
+                    <h3 id="left-urls">Socials</h3>
+                    <ul id="social-list">
+                        <li><a href="" target="_blank">LinkedIn</a></li>
+                        <li><a href="" target="_blank">Github</a></li>
                     </ul>
-                </nav>
+
+
+                </div>
                 <main>      <!-- 3. main -->
-                    <h3>Home</h3>
+                    <h3 id="current-page-header">   <!-- header has small containers with labels-->
+                        <!-- container structure -->
+                        <span id="cph-text-container">
+                            <span id="cph-text">Home</span>
+                        </span>
+                        <!-- container structure -->
+                    </h3>
                     <div id="imgbio_container"> <!-- might remove -->
                         <img src="" alt="A picture of Abdulrhman Alharbi"/>
                         <p>
@@ -35,7 +52,7 @@
                 </main>
             </div>
             <footer>    <!-- 4. footer -->
-                <p>All rights reserved by Abdulrhman Alharbi <a href="">Credits</a> &#169;</p>
+                <p>All rights reserved by Abdulrhman Alharbi <a href="credits.html">Credits</a> &#169;</p>
             </footer>
         </div>
     </body>
