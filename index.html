@@ -7,7 +7,7 @@
         <title> Home | resume </title>
     </head>
     <body>
-        <img src="maine-sunrise-crop.jpg" alt="" id="page-img" />
+        <img src="maine-sunrise-crop.jpg" alt="image of sunset at the header of the page" id="page-img" />
         <div id="page-wrapper">
             <header>    <!-- 1. header-->
                 <h1>Abdulrhman Alharbi</h1>
@@ -17,7 +17,11 @@
             <div id="container">
                 <div id="left-content">
                     <nav>       <!-- 2. navigation -->
-                        <h3 id="left-nav">Navigation</h3>
+                        <div class="small-section-header" >
+                            <div class="small-label-containers">
+                                <h3 class="label-text">Navigation</h3>
+                            </div>
+                        </div>
                         <ul id="nav-list">
                             <li><a href="index.html" title="you are here">Home</a></li>
                             <li><a href="index.html">About Me</a></li>
@@ -27,7 +31,11 @@
                             <li><a href="index.html">Contact Me</a></li>
                         </ul>
                     </nav>
-                    <h3 id="left-urls">Socials</h3>
+                    <div class="small-section-header" >
+                        <div class="small-label-containers">
+                            <h3 class="label-text">Socials</h3>
+                        </div>
+                    </div>
                     <ul id="social-list">
                         <li><a href="" target="_blank">LinkedIn</a></li>
                         <li><a href="" target="_blank">Github</a></li>
@@ -35,21 +43,27 @@
 
 
                 </div>
-                <main>      <!-- 3. main -->
-                    <h3 id="current-page-header">   <!-- header has small containers with labels-->
+                <!-- main tag start -->
+                <main>
+                    <!-- in-page header -->
+                    <div id="current-page-header"> <!-- header has small containers with labels-->
                         <!-- container structure -->
-                        <span id="cph-text-container">
-                            <span id="cph-text">Home</span>
-                        </span>
+                        <div class="label-containers">
+                            <h3 id="cph-text">Home</h3>
+                        </div>
                         <!-- container structure -->
-                    </h3>
-                    <div id="imgbio_container"> <!-- might remove -->
+                    </div>
+
+                    <!-- main content -->
+                    <div id="imgbio_container"> <!-- allow different ordering for flexbox-->
                         <img src="" alt="A picture of Abdulrhman Alharbi"/>
                         <p>
                             Content about me.
                         </p>
                     </div>
+                    <p>text</p>
                 </main>
+                <!-- main tag end -->
             </div>
             <footer>    <!-- 4. footer -->
                 <p>All rights reserved by Abdulrhman Alharbi <a href="credits.html">Credits</a> &#169;</p>
