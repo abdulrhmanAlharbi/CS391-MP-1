@@ -1,3 +1,7 @@
+/* this file contains styling common among all html files.
+ * this makes changes easier and reduces verbosity.
+ */
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -6,7 +10,7 @@
     display: block;
     width: 100%;
     height: auto;
-    border-bottom: #ebc248 0.25vh solid;
+    border-bottom: #dca060 0.25vh solid;
 }
 
 body {
@@ -15,58 +19,13 @@ body {
     font-family: "Mina", serif;
 }
 
-/* main content */
-/*
-*/
-
+/* global */
 main{
     width: 78%;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
-#imgbio_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    border-bottom: #343538 1vh solid;
-}
-
-#img-container {
-    width: 40%;
-    margin: 6vh;
-    border: #343538 0.45vh solid;
-}
-#img {
-    width: 100%;
-    height: 100%;
-}
-
-#bio-container {
-    width: 100%;
-    padding-top: 6vh;
-}
-#bio {
-    align-self: center;
-    width: 100%;
-    padding-right: 6vw;
-    color: #ebc248;
-    font-size: calc(2px + 1.3vw);
-}
-/* new row */
-#section {
-    padding-top: 4vh;
-    margin: 1vh 3vw;
-    color: #ebc248;
-    font-size: calc(2px + 1vw);
-}
-/*
-*
-*
- */
-/* main content end */
 
 #page-wrapper {
     width: 80vw;
@@ -75,7 +34,7 @@ main{
 
 header{
     background: #101112;
-    color: #ebc248;
+    color: #dca060;
     margin-top: 0.7vh;
     margin-bottom: 1.5vh;
 }
@@ -97,7 +56,7 @@ nav {
     padding-left: 1.3vw;
     font-size: calc(3px + 1vw);
     background: #343538;
-    color: #6fb0f2;
+    color: #41afff;
 }
 
 #left-urls {
@@ -106,7 +65,7 @@ nav {
     padding-left: 1.3vw;
     font-size: calc(3px + 1vw);
     background: #343538;
-    color: #6fb0f2;
+    color: #41afff;
 }
 
 #social-list {
@@ -157,6 +116,7 @@ nav li:hover{
 }
 nav a:hover{
     color: #e87a89;
+    font-weight: bold;
     padding-left: 1.8vw;
 }
 
@@ -189,7 +149,7 @@ nav a:hover{
 #cph-text {
     margin-left: 1vw;
     margin-bottom: 0.2vh;
-    color: #ebb9ef;
+    color: #b3a6ff;
 }
 
 /* containers used for header labels (navigation, home, etc) */
@@ -207,7 +167,7 @@ nav a:hover{
     display: flex; /* to move the text using flexbox */
     flex-direction: row;
     align-items: flex-end; /* move to bottom */
-    width: 80%;
+    width: 65%;
     height: 90%;
     background: #232426;
     font-size: calc(3px + 1vw);
@@ -225,7 +185,7 @@ nav a:hover{
 .label-text {
     margin-left: 1vw;
     margin-bottom: 0.2vh;
-    color: #6fb0f2;
+    color: #41afff;
 }
 
 .small-section-header { /* similar to current page header but smaller */
@@ -309,15 +269,20 @@ nav a:hover{
         justify-content: center;
     }
 
+    #social-list a {
+        height: 30px;
+        width: 30px;
+    }
+
     .s-icon {
         height: 30px;
         width: 30px;
     }
 
     .label-text {
-        margin-left: 0vw;
-        margin-bottom: 0vh;
-        color: #6fb0f2;
+        margin-left: unset;
+        margin-bottom: unset;
+        color: #41afff;
     }
 
     .small-label-containers, .small-section-header{

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link type="text/css" rel="stylesheet" href="./projects.css" />
+    <link type="text/css" rel="stylesheet" href="../style-global.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Orbitron:wght@400..900&family=Prosto+One&display=swap');
+    </style>
+    <meta name="description" content="This is a website containing Abdulrhman Alharbi's Resume" /> <!-- meta-description tag -->
+    <title> Projects | resume </title>
+</head>
+    <body>
+        <img src="../src/maine-sunrise-crop.jpg" alt="image of sunset at the header of the page" id="page-img" />
+        <div id="page-wrapper">
+            <header>    <!-- 1. header-->
+                <h1>Abdulrhman Alharbi</h1>
+                <p>My Online Resume</p>
+
+            </header>
+            <div id="container">
+                <div id="left-content">
+                    <nav>       <!-- 2. navigation -->
+                        <div class="small-section-header" >
+                            <div class="small-label-containers">
+                                <h3 class="label-text">Navigation</h3>
+                            </div>
+                        </div>
+                        <ul id="nav-list">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about-me/about-me.html">About Me</a></li>
+                            <li><a href="index.html">Skills</a></li>
+                            <li><a href="../projects/projects.html">Projects</a></li>
+                            <li><a href="index.html">Experience</a></li>
+                            <li><a href="index.html">Contact Me</a></li>
+                        </ul>
+                    </nav>
+                    <!-- extra space -->
+                    <div class="small-section-header" >
+                        <div class="small-label-containers" id="socials">
+                            <h3 class="label-text">Socials</h3>
+                        </div>
+                    </div>
+                    <ul id="social-list">
+                        <li><a href="" target="_blank">
+                            <img src="../src/icons8-linkedin-50.png" alt="linkedin" class="s-icon">
+                        </a></li>
+                        <li><a href="" target="_blank">
+                            <img src="../src/icons8-github-60.png" alt="github" class="s-icon">
+                        </a></li>
+                    </ul>
+                    <!-- extra space -->
+
+
+                </div>
+                <!-- main tag start -->
+                <main>
+                    <!-- in-page header -->
+                    <div id="current-page-header"> <!-- header has small containers with labels-->
+                        <!-- container structure -->
+                        <div class="label-containers">
+                            <h3 id="cph-text">Projects</h3>
+                        </div>
+                        <!-- container structure -->
+                    </div>
+
+                    <!-- main content -->
+                    <p id="section">
+                        This page serves as a showcase of some projects I have worked on, presenting simple implementations of various concepts and designs.
+                    </p>
+
+                    <h4 id="proj1-title">Calculator</h4>
+                    <div id="project-1">
+                        <div id="calculator">
+                            <div id="result-container">
+                                <p id="result"></p> <!-- result goes here, will be edited by js -->
+                            </div>
+                            <div id="user-input">
+                                <div id="first">
+                                    <label for="first-input">First Number</label><input id="first-input">
+                                </div>
+                                <div id="operator">
+                                    <button onclick="myadd()" class="button">+</button>
+                                    <button onclick="mysub()" class="button">-</button>
+                                    <button onclick="mymult()" class="button">*</button>
+                                    <button onclick="mydiv()" class="button">/</button>
+                                    <button onclick="mypow()" class="button">**</button>
+                                    <button onclick="myclear()" class="button">clear</button>
+                                </div>
+                                <div id="second">
+                                    <label for="second-input">Second Number</label><input id="second-input">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- project 2, etc -->
+                </main>
+                <!-- main tag end -->
+            </div>
+            <footer>    <!-- 4. footer -->
+                <p>All rights reserved by Abdulrhman Alharbi <a href="credits.html">Credits</a> &#169;</p>
+            </footer>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>

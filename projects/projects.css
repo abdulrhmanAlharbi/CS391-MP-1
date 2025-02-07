@@ -1,0 +1,111 @@
+/* new row */
+#section {
+    padding-top: 2vh;
+    margin: 1vh 3vw;
+    color: #dca060;
+    font-size: calc(2px + 1vw);
+}
+/*
+*
+*/
+/* for projects.html */
+
+#project-1 {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom:  1vh solid #343538;
+}
+
+#proj1-title {
+    display: flex;
+    align-items: center;
+    padding-left: 1.8vw;
+    height: 7vh;
+    border-bottom: 0.4vh dashed #343538;
+    font-size: calc(3px + 0.9vw);
+
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 90%;
+    padding-top: 5vh;
+    font-family: "Orbitron", serif;
+}
+
+#result-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border: #dca060 0.3vh solid;
+    height: 7vh;
+    overflow: hidden;
+
+}
+#result {
+    width: fit-content;
+    font-size: calc(3px + 2vw);
+    padding-right: 0.2vw;
+    color: #dca060;
+
+}
+
+#user-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    border-top: 2vh #dca060;
+    font-family: "Orbitron", serif;
+}
+
+#operator {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#first,#second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#first label, #second label {
+    height: 35%;
+    width: 100%;
+    background: #dca060;
+    align-content: center;
+    text-align: center;
+    color: #101112;
+    font-size: calc(3px + 1vw);
+    font-weight: bold;
+}
+#first-input, #second-input {
+    flex: 1;
+    width: 100%;
+    background: #1d1f21;
+    color: #dca060;
+    font-size: calc(3px + 2vw);
+    text-align: center;
+}
+
+.button {
+    flex: 1;
+    background: #232426;
+    font-weight: bold;
+    font-size: calc(3px + 1vw);
+    color: white;
+}
+/*
+*/
+/*  For small screens */
+
+@media screen and (max-width: 900px) {
+
+}
