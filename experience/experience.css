@@ -1,0 +1,56 @@
+/* this contains styling that should only be applied to home */
+/* main start */
+.label-containers {
+    width: 24%;
+}
+#section-1 {
+    padding: 3vh 3vw 7vh 3vw; /* im using padding to allow borders to occupy the entire area */
+    color: #dca060;
+    font-size: calc(2px + 1.2vw);
+    border-bottom: 0.4vh dashed #343538;
+}
+#section-2 {
+    padding: 6vh 3vw 7vh 3vw;
+    color: #dca060;
+    font-size: calc(2px + 1.2vw);
+    border-bottom: 0.4vh dashed #343538;
+
+
+}
+#section-2 h3 {
+    font-size: calc(2px + 1.5vw);
+    color: #ffcf9b;
+
+}
+#section-3 {
+    padding: 6vh 3vw 7vh 3vw;
+    color: #dca060;
+    font-size: calc(2px + 1.2vw);
+    border-bottom: 1vh solid #343538;
+
+
+}
+#section-3 h3 {
+    font-size: calc(2px + 1.5vw);
+    color: #ffcf9b;
+}
+@media screen and (max-width: 900px) {
+    #section-2 {
+        padding: 3vh 3vw 7vh 3vw;
+    }
+
+    #section-2 h3 {
+        text-align: center;
+        padding-bottom: 2vh;
+
+    }
+    #section-3 {
+        padding: 3vh 3vw 7vh 3vw;
+    }
+    #section-3 h3 {
+        text-align: center;
+        padding-bottom: 2vh;
+
+    }
+
+}

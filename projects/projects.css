@@ -1,9 +1,8 @@
 /* new row */
 #section {
-    padding-top: 2vh;
-    margin: 1vh 3vw;
+    margin: 3vh 3vw 3vh 3vw;
     color: #dca060;
-    font-size: calc(2px + 1vw);
+    font-size: calc(2px + 1.2vw);
 }
 /*
 *
@@ -24,7 +23,9 @@
     padding-left: 1.8vw;
     height: 7vh;
     border-bottom: 0.4vh dashed #343538;
-    font-size: calc(3px + 0.9vw);
+    font-size: calc(3px + 1.3vw);
+    color: #ffcf9b;
+
 
 }
 

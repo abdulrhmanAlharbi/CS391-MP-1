@@ -1,0 +1,68 @@
+/* this contains styling that should only be applied to home */
+/* main start */
+#imgbio_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    border-bottom: #343538 1vh solid;
+}
+
+#img-container {
+    width: 40%;
+    margin: 6vh;
+    border: #343538 0.45vh solid;
+}
+#img {
+    width: 100%;
+    height: 100%;
+}
+
+#bio-container {
+    width: 100%;
+    padding-top: 6vh;
+}
+#bio {
+    align-self: center;
+    width: 100%;
+    padding-right: 2vw;
+    color: #dca060;
+    font-size: calc(2px + 1.3vw);
+}
+/* new row */
+#section {
+    padding-top: 4vh;
+    margin: 1vh 3vw;
+    color: #dca060;
+    font-size: calc(2px + 1.2vw);
+}
+/* main content end */
+#intro {
+    color: #ffcf9b;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    #imgbio_container {
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+    }
+    #img-container {
+        margin: 4vh;
+    }
+
+    #bio-container {
+        padding-top: unset;
+    }
+
+    #bio {
+        font-size: calc(2px + 2vw);
+        text-align: center;
+        padding-right: unset;
+        padding: 2vw;
+    }
+
+
+
+}

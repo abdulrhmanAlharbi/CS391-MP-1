@@ -74,13 +74,18 @@ nav {
     justify-content: space-evenly;
     list-style: none;
     padding-left: 0;
-    padding-top: 4vh;
+    padding-top: 8vh;
 }
-
-
+#social-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    height: 4vh;
+}
 .s-icon {
-    height: 40px;
-    width: 40px;
+    height: 100%;
+    width: 100%;
 }
 
 nav ul{
@@ -200,7 +205,7 @@ nav a:hover{
 /*  For small screens */
 
 @media screen and (max-width: 900px) {
-    main {
+    main{
         width: 100%;
     }
     header{
@@ -260,23 +265,14 @@ nav a:hover{
         width: 20%;
         flex-direction: row;
         justify-content: space-evenly;
-        padding-top: unset;
         border-left: 1vw solid #343538;
+        padding-top: unset;
+        align-items: center;
     }
     #social-list li {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    #social-list a {
-        height: 30px;
-        width: 30px;
-    }
-
-    .s-icon {
-        height: 30px;
-        width: 30px;
     }
 
     .label-text {
